@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="icon.jpg" height="30px">
+  <title>Sidhant Mishra</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+      <link href="main.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="typed.js" type="text/javascript"></script>
+  <style>
+ 
+  {
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+
+
+  </style>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<script>
+jQuery('body').bind('click', function(e) {
+    if(jQuery(e.target).closest('.navbar').length == 0) {
+        // click happened outside of .navbar, so hide
+        var opened = jQuery('.navbar-collapse').hasClass('collapse in');
+        if ( opened === true ) {
+            jQuery('.navbar-collapse').collapse('hide');
+        }
+    }
+});
+</script>
+<nav class="navbar navbar-default navbar-fixed-top" >
+  <div style="background-color:black; font-color:white;" class="container-fluid">
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img class="abc" align="top" src="icon.jpg" height="30px"></a>
+
+      <a class="navbar-brand" id="tit" href="#">Sidhant Mishra</a>
+    </div>
+            <nav class="nav">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+
+        <li class="active"><a href="#section5">Home</a></li>
+        <li><a href="#section1" >About me</a></li>
+        <li><a href="#section2">My Activities</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Achievements<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section3">Internship</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#section4">Certificates</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+            <ul class="nav navbar-nav navbar-right">
+             <li><a href="backend/index.php">Sign In</a></li>
+        <li><a href="backend/register.php">Sign Up</a></li>
+          </ul>
+    </div>
+    </nav>
+  </div>
+</nav>
+<section id="section5" class="container-fluid">
+    <script>
+    $(function(){
+
+        $("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 60,
+            backDelay: 100,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+ <p style="padding-top:50px;"></p>
+        <div class="type-wrap">
+            <div id="typed-strings">
+
+                <h1 class="text">Secured 2177 rank in codchef NOV16 <br>coding competition... </h1>
+                <h1 class="text">Love to work and research on internet<br>of things... </h1>
+                <h1 class="text">Did internship on content writing<br>from scribblers... </h1>
+                <h1 class="text">And you can feel my attachment with<br>these topics... </h1>
+                <h1 class="text">Scroll Down... </h1>
+            </div>
+            <span id="typed" style="white-space:pre;"></span>
+        </div>
+    </div>
+
+
+
+<div class="mobo">
+<div class="w3-content w3-section" style="max-width:110%">
+<img class="mySlides" src="1.png" style="width:100%">
+  <img class="mySlides" src="3.jpg" style="width:100%">
+  <img class="mySlides" src="4.jpg" style="width:100%">
+  <img class="mySlides" src="4.png" style="width:100%">
+</div>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 7500); // Change image every 2 seconds
+}
+</script>
+</section>
+
+<div style="text-align:center">
+<section id="section1" class="container-fluid">
+<br>
+<div style="padding-top:50px;"></div>
+  <img src="6.jpg" class="img-circle" alt="Cinque Terre" width="250" height="250">
+<h1 class="head">ABOUT ME</h1>
+<p>Enjoy creating things with bootstrap, jquery, ajax</p><br>
+<p>Like to do coding and very crazy about coding competition</p></br>
+<p>Looking towards iOT based projects</p></br>
+<a href="https://www.facebook.com/sidhant.mishra.716"><img class="abc" src="fb.png" height="75">
+<img class="abc" src="tw.jpg" height="75"></a>
+<a href="https://www.linkedin.com/in/sidhant-mishra-1b30b8120"><img class="abc" src="li.png" height="75"></a>
+<br>
+</br>
+</section>
+</div>
+
+<section id="section2">
+<div style="padding-top:30px;"></div>
+<div class="container" style="text-align:center;">
+<h1 class="head">MY ACTIVITIES</h1>
+    <h1 class="head" style="padding-top:30px">Internet of Things</h1>
+    <h3 class="cont">
+      In coming years we will be having internet of things revolution. As we have seen internet revolution, mobile revolution and now is the time for
+      internet of things revolution. Keeping the future in mind I have invested my time in developing some iOT gadgets.
+    </h3 >
+    <h1 class="head">Web Development</h1>
+    <h3 class="cont">
+      Heading towards making a database based project basically a back end project which would boost my knowledge in php mysql and many more new things as I proceed.
+
+    </h3>
+    <h1 class="head">Programming</h1>
+    <h3 class="cont">
+      Currently using codechef and targetting to secure rank below 500. My ultimate aim is to crack codejam comptetive examination 
+
+    </h3>
+    </div>
+  </section>
+  <section id="section3">
+  <div style="padding-top:50px"></div>
+  <div class="container-fluid">
+  <div class="row">
+  <h1 class="head" style="text-align:center; padding-bottom:40px">INTERNSHIP</h1>
+    <div class="col-sm-6">
+      <img  class="pdf" style="display:block;" width="100%" height="400" id="1" data-toggle="modal" data-target="#myModal1" src='p1.jpg'>
+    </div>
+    <div class="col-sm-6" >
+    <h1 class="head" style="text-align:center">Internship at Scribblers</h1>
+     <h3 class="cont">Did internship in an online web content writing company, Scribblers India. This was my first expirience in the professional field. Learned lot abouut how to deliver product in time, way of communication, invoice process and many more things</h3>
+    </div>
+  </div>
+</div>
+<div class="pad"></div>
+  </section>
+
+  <section id="section4">
+  <div style="padding-top:50px"></div>
+    <h1 class="head" style="text-align:center; padding-bottom:40px">CERTIFICATES</h1>
+   <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+    <h3 class="cont">CSS3 online Course</h3>
+     <img class="pdf" style="display:block;" width="100%" height="250" id="2" data-toggle="modal" data-target="#myModal2" src='c1.jpg' >
+    </div>
+    <div class="col-sm-4" >
+    <h3 class="cont">Javascript online Course</h3>
+    <img class="pdf" style="display:block;" width="100%" height="250" id="3" data-toggle="modal" data-target="#myModal3" src='c2.jpg' >
+    </div>
+     <div class="col-sm-4" >
+     <h3 class="cont">Responsive Designing</h3>
+    <img class="pdf" style="display:block;" width="100%" height="250" id="4" data-toggle="modal" data-target="#myModal4" src='c3.jpg' >
+    </div>
+  </div>
+</div>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+    <h3 class="cont">Capstone Project</h3>
+     <img class="pdf" style="display:block;" width="100%" height="250" id="5" data-toggle="modal" data-target="#myModal5" src='c4.jpg' >
+    </div>
+    <div class="col-sm-4" >
+    <h3 class="cont">Arduino online Course</h3>
+    <img class="pdf" style="display:block;" width="100%" height="250" id="6" data-toggle="modal" data-target="#myModal6" src='c5.jpg' >
+    </div>
+    <h3 class="cont">Complete Web designing</h3>
+    <div class="col-sm-4" >
+   <img class="pdf" style="display:block;" width="100%" height="250" id="7" data-toggle="modal" data-target="#myModal7" src='c6.jpg' >
+    </div>
+  </div>
+</div>
+  </section>
+
+   <div id="myModal1" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+            </div>
+            <div class="modal-body">
+                <img class="showimage img-responsive" height="500px" src="p1.jpg" />
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div id="myModal2" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+            </div>
+            <div class="modal-body">
+                <img class="showimage img-responsive" height="500px" src="c1.jpg" />
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div id="myModal3" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+            </div>
+            <div class="modal-body">
+                <img class="showimage img-responsive" height="500px" src="c2.jpg" />
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div id="myModal4" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+            </div>
+            <div class="modal-body">
+                <img class="showimage img-responsive" height="500px" src="c3.jpg" />
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div id="myModal5" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+            </div>
+            <div class="modal-body">
+                <img class="showimage img-responsive" height="500px" src="c4.jpg" />
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div id="myModal6" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+            </div>
+            <div class="modal-body">
+                <img class="showimage img-responsive" height="500px" src="c5.jpg" />
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div id="myModal7" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+            </div>
+            <div class="modal-body">
+                <img class="showimage img-responsive" height="500px" src="c6.jpg" />
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div style="background-color:black;padding-bottom:5px; padding-top:5px; padding-right:5px;">
+<h3 class="foot" style="color:white; text-align:center">Copyright © 2016 SM. All rights reserved<a href="#section5" style="background-color:lightgrey; float:right;">Back to top</a></h3>
+</div>
+</body>
+</html>
+
